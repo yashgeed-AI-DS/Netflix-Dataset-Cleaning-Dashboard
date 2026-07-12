@@ -1,0 +1,130 @@
+/* ---------------------------------------------------------------------- */
+/* Netflix Dataset Cleaning Dashboard — Custom Styling                    */
+/* Works with both light and dark Streamlit themes                        */
+/* ---------------------------------------------------------------------- */
+
+:root{
+    --nf-red: #E50914;
+    --nf-red-dark: #B0060F;
+    --nf-black: #141414;
+}
+
+/* Page container width tweak for a cleaner look on wide layout */
+.block-container{
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
+}
+
+/* ---- Hero / title banner ---- */
+.hero-banner{
+    background: linear-gradient(120deg, var(--nf-red) 0%, var(--nf-red-dark) 100%);
+    padding: 2.2rem 2rem;
+    border-radius: 16px;
+    color: #ffffff;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 8px 24px rgba(229, 9, 20, 0.25);
+}
+.hero-banner h1{
+    margin: 0 0 .4rem 0;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #ffffff !important;
+}
+.hero-banner p{
+    margin: 0;
+    font-size: 1.02rem;
+    opacity: 0.95;
+}
+
+/* ---- Section headers ---- */
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 750;
+    margin: .2rem 0 1rem 0;
+    display:flex;
+    align-items:center;
+    gap: .5rem;
+    border-left: 5px solid var(--nf-red);
+    padding-left: .7rem;
+}
+
+/* ---- Metric cards ---- */
+.metric-card{
+    background: rgba(127,127,127,0.08);
+    border: 1px solid rgba(127,127,127,0.18);
+    border-radius: 14px;
+    padding: 1.1rem 1rem;
+    text-align: center;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+.metric-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(229,9,20,0.18);
+    border-color: var(--nf-red);
+}
+.metric-card .metric-value{
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--nf-red);
+}
+.metric-card .metric-label{
+    font-size: .88rem;
+    opacity: .8;
+    margin-top: .2rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+/* ---- Step / feature cards ---- */
+.step-card{
+    background: rgba(127,127,127,0.06);
+    border: 1px solid rgba(127,127,127,0.16);
+    border-left: 5px solid var(--nf-red);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: .9rem;
+}
+
+.badge{
+    display:inline-block;
+    padding: .18rem .65rem;
+    border-radius: 999px;
+    background: rgba(229,9,20,0.14);
+    color: var(--nf-red);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+}
+
+.badge-success{
+    background: rgba(34,197,94,0.14);
+    color: #16a34a;
+}
+
+/* ---- Footer ---- */
+.app-footer{
+    text-align:center;
+    padding: 1.4rem 0 .4rem 0;
+    opacity: .75;
+    font-size: .9rem;
+    border-top: 1px solid rgba(127,127,127,0.2);
+    margin-top: 2.2rem;
+}
+
+/* ---- Tech pill list on Home page ---- */
+.tech-pill{
+    display:inline-block;
+    background: rgba(127,127,127,0.10);
+    border: 1px solid rgba(127,127,127,0.22);
+    border-radius: 999px;
+    padding: .35rem 1rem;
+    margin: .25rem .35rem .25rem 0;
+    font-size: .92rem;
+    font-weight: 600;
+}
+
+/* Dataframe corners */
+[data-testid="stDataFrame"]{
+    border-radius: 12px;
+    overflow: hidden;
+}
