@@ -27,8 +27,7 @@ from streamlit_option_menu import option_menu
 from cleaning import run_pipeline
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_DATA_PATH = os.path.join(BASE_DIR, "netflix_movies_dirty.csv")
+
 # --------------------------------------------------------------------------- #
 # Page configuration
 # --------------------------------------------------------------------------- #
@@ -41,7 +40,7 @@ st.set_page_config(
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 ASSETS_DIR = os.path.join(APP_DIR, "assets")
-DEFAULT_DATA_PATH = os.path.join(ASSETS_DIR, "netflix_movies_dirty.csv")
+DEFAULT_DATA_PATH = os.path.join(APP_DIR, "netflix_movies_dirty.csv")
 CSS_PATH = os.path.join(ASSETS_DIR, "style.css")
 
 
