@@ -24,7 +24,7 @@ import seaborn as sns
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-from utils.cleaning import run_pipeline
+from cleaning import run_pipeline
 
 # --------------------------------------------------------------------------- #
 # Page configuration
