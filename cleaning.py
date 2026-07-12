@@ -562,7 +562,7 @@ def run_pipeline(raw_df: pd.DataFrame):
     before = df.copy()
     for col in ["Release_Year", "Votes", "Duration"]:
         if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce").astype("Int64")
+            df[col] = pd.to_numeric(df[col], errors="coerce").round().astype("Int64")
     record("dtypes", before, df, "Converted whole-number columns to nullable Int64.")
 
     overall_after = _snapshot(df)
