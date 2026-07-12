@@ -25,7 +25,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 from cleaning import run_pipeline
-
+DEFAULT_DATA_PATH = os.path.join(ASSETS_DIR, "netflix_movies_dirty.csv")
 # --------------------------------------------------------------------------- #
 # Page configuration
 # --------------------------------------------------------------------------- #
